@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: pink;
+}
+.box {
+  position: relative;
+  width: 300px;
+}
+
+.box .inputBox {
+  position: relative;
+  width: 300px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+.box .inputBox input {
+  position: relative;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px 5px;
+}
+
+.box .inputBox #toggleBtn {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box .inputBox #toggleBtn::before {
+  content: "\f06e";
+  font-family: fontAwesome;
+}
+.box .inputBox #toggleBtn.hide::before {
+  content: "\f070";
+  font-family: fontAwesome;
+}
+
+.validation {
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 8px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+  background: #376488;
+}
+
+.validation span {
+  position: relative;
+  bottom: 10px;
+  color: #fff;
+}
+
+.validation ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.validation ul li {
+  position: relative;
+  list-style: none;
+  color: #fff;
+  font-size: 0.85em;
+  transition: 0.5s;
+}
+
+.validation ul li::before {
+  content: "\f192";
+  font-family: fontAwesome;
+  width: 20px;
+  height: 10px;
+  display: inline-flex;
+}
+
+.validation ul li.valid {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.validation ul li.valid::before {
+  content: "\f14a";
+  font-family: fontAwesome;
+  color: #0f0;
+}
+.footer {
+  position: fixed;
+  bottom: 10px;
+  color: #000;
+}
+.footer a {
+  text-decoration: none;
+}

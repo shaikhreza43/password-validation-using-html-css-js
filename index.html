@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Validation Using Html Css Javascript</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="box">
+      <div class="inputBox">
+        <input
+          type="password"
+          name="psswd"
+          id="psswd"
+          placeholder="Password"
+          onkeyup="checkPassword(this.value)"
+        />
+        <span id="toggleBtn"></span>
+      </div>
+    </div>
+    <div class="validation">
+      <span>Password Must Contain</span>
+      <ul>
+        <li id="lower">Atleast one lower case character</li>
+        <li id="upper">Atleast one upper case character</li>
+        <li id="number">Atleast one number</li>
+        <li id="special">Atleast one special character</li>
+        <li id="length">Atleast 8 characters long</li>
+      </ul>
+    </div>
+    <footer class="footer">
+      <span>
+        Developed by
+        <a href="https://developerahmed.web.app/" target="_blank"
+          >Shaikh Ahmed Reza</a
+        >
+      </span>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>
